@@ -83,7 +83,7 @@ export default function Home() {
                 })
             }
         })
-    }, [id])
+    }, [products])
 
     const inputQtd = (e) => {
         let valorAtual = quantityInput;
