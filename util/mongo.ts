@@ -10,13 +10,11 @@ const options = {}
 let client: MongoClient
 let clientPromise: Promise<MongoClient>
 
-declare global {
-  namespace NodeJS {
-    interface Global {
-      _mongoClientPromise: { [key: string]: any } // ou { [key: string]: Promise<MongoClient> }
-    }
-  }
+interface CustomGlobal extends NodeJS.Global {
+  _mongoClientPromise?: Promise<MongoClient>
 }
+
+declare const global: CustomGlobal
 
 if (process.env.NODE_ENV === 'development') {
   if (!global._mongoClientPromise) {
