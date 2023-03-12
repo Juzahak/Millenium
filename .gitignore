@@ -6,6 +6,3 @@ node_modules
 
 # Ignore a pasta .next
 .next
-
-# Ignore arquivos relacionados às chaves de API
-.env
