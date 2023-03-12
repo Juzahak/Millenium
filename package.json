@@ -44,6 +44,6 @@
   "devDependencies": {
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
-    "typescript": "node_modules/typescript"
+    "typescript": "^4.9.5"
   }
 }
