@@ -45,7 +45,7 @@ export default function Home() {
     const colorConstructor = (name) => {
         setArray([]);
         setPriceArray([]);
-        // let arrPrice = JSON.parse(product.price) || []
+        let arrPrice = JSON.parse(product.price) || []
         arrPrice?.forEach((item3, index) => {
             if (item3.size == name) {
                 colors.forEach(item4 => {
