@@ -4,6 +4,11 @@ if (!process.env.MONGO_URL) {
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"')
 }
 
+declare global {
+  function someFunction(): string;
+  var someVariable: string;
+}
+
 const uri = process.env.MONGO_URL
 const options = {}
 
