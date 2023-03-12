@@ -10,13 +10,20 @@ const options = {}
 let client: MongoClient
 let clientPromise: Promise<MongoClient>
 
-if (process.env.NODE_ENV === 'development') {
-  // Use `Promise<MongoClient>` como tipo da variável `_mongoClientPromise`
-  if (!globalThis._mongoClientPromise) {
-    client = new MongoClient(uri, options)
-    globalThis._mongoClientPromise = client.connect()
+declare global {
+  namespace NodeJS {
+    interface Global {
+      _mongoClientPromise: { [key: string]: any } // ou { [key: string]: Promise<MongoClient> }
+    }
   }
-  clientPromise = globalThis._mongoClientPromise
+}
+
+if (process.env.NODE_ENV === 'development') {
+  if (!global._mongoClientPromise) {
+    client = new MongoClient(uri, options)
+    global._mongoClientPromise = client.connect()
+  }
+  clientPromise = global._mongoClientPromise
 } else {
   client = new MongoClient(uri, options)
   clientPromise = client.connect()
