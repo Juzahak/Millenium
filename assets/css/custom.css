@@ -1,0 +1,458 @@
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.ec-test-item {
+  height: 150px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B01D21;
+  height: 12px;
+  width: 12px;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+
+.itemBtn {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .bg-imagem1 {
+  background-image: url("../img/slider/banner1.jpg");
+  height: 450px !important;
+}
+.bg-imagem2 {
+  background-image: url("../img/slider/banner2.jpg");
+  height: 450px !important;
+}
+.bg-imagem-comentarios {
+  background-image: url("../img/banner/banner02.jpg");
+} */
+
+.custom-img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.page-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #B01D21;
+  letter-spacing: -0.3px;
+  position: relative;
+  display: inline;
+  padding: 0;
+  text-transform: uppercase;
+  padding-bottom: 1px;
+  line-height: 1;
+}
+
+.grid-img-small {
+  padding: 5px;
+}
+
+.grid-img {
+  padding: 5px;
+}
+
+.swiper-button-next {
+  color: #B01D21 !important;
+}
+
+.swiper-button-prev {
+  color: #B01D21 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B01D21 !important;
+}
+
+.imageBanner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visualimg {
+  width: 300px;
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+  -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+
+.btn-mercado:hover {
+  transition: 0.5s all ease;
+  background-color: #41b6f9 !important;
+}
+.btn-mercado {
+  background-color: #00b1ea !important;
+}
+
+.pagination ul {
+  display: flex !important;
+}
+
+.pagination ul li.selected a {
+  padding: 10px;
+  color: white;
+  background: #b01d21;
+}
+
+.pagination ul li a {
+  padding: 10px;
+  color: white !important;
+  background: rgba(162, 162, 162, 0.634);
+}
+
+.pagination ul li.next a {
+  padding: 10px;
+  color: #b01d21 !important;
+  background: rgba(128, 128, 128, 0);
+}
+
+.pagination ul li.previous a {
+  padding: 10px;
+  color: #b01d21 !important;
+  background: rgba(128, 128, 128, 0);
+}
+
+.modal-comentario {
+  border-radius: 6px;
+  width: 45%;
+}
+
+.mob-block {
+  display: none;
+}
+
+.desk-wpp {
+  width: 55px;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+}
+
+@media all and (max-width: 240px) {
+  .mob-column {
+    flex-direction: column;
+  }
+  .mob-none {
+    display: none !important;
+  }
+  .mob-row {
+    flex-direction: row;
+  }
+  .mob-center {
+    justify-content: center;
+  }
+
+  .mob-featured {
+    align-items: center;
+    flex-direction: column;
+  }
+  .mob-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-comentario {
+    border-radius: 6px;
+    width: 100%;
+  }
+  .mob-footer {
+    position: inherit !important;
+    font-size: 20px !important;
+  }
+  .mob-width {
+    width: auto !important;
+  }
+  .mob-struture {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .mob-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .mob-footerLinks {
+    display: flex;
+    justify-content: center;
+  }
+  .mob-block {
+    display: block;
+  }
+  .mob-banner {
+    object-fit: cover;
+    height: 450px;
+  }
+}
+
+@media all and (min-width: 241px) and (max-width: 480px) {
+  .mob-column {
+    flex-direction: column;
+  }
+  .mob-row {
+    flex-direction: row;
+  }
+  .mob-none {
+    display: none !important;
+  }
+  .mob-center {
+    justify-content: center;
+  }
+  .mob-featured {
+    align-items: center;
+    flex-direction: column;
+  }
+  .mob-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-comentario {
+    border-radius: 6px;
+    width: 100%;
+  }
+  .mob-footer {
+    position: inherit !important;
+    font-size: 20px !important;
+  }
+  .mob-width {
+    width: auto !important;
+  }
+  .mob-struture {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .mob-footerLinks {
+    display: flex;
+    justify-content: center;
+  }
+  .mob-block {
+    display: block;
+  }
+  .mob-banner {
+    object-fit: cover;
+    height: 450px;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .mob-column {
+    flex-direction: column;
+  }
+  .mob-row {
+    flex-direction: row;
+  }
+  .mob-center {
+    justify-content: center;
+  }
+  .mob-none {
+    display: none !important;
+  }
+  .mob-featured {
+    align-items: center;
+    flex-direction: column;
+  }
+  .mob-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-comentario {
+    border-radius: 6px;
+    width: 100%;
+  }
+  .mob-footer {
+    position: inherit !important;
+    font-size: 20px !important;
+  }
+  .mob-width {
+    width: auto !important;
+  }
+  .mob-struture {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .mob-footerLinks {
+    display: flex;
+    justify-content: center;
+  }
+  .mob-block {
+    display: block;
+  }
+  .mob-banner {
+    object-fit: cover;
+    height: 450px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 990px) {
+  .mob-column {
+    flex-direction: column;
+  }
+  .mob-row {
+    flex-direction: row;
+  }
+  .mob-center {
+    justify-content: center;
+  }
+  .mob-none {
+    display: none !important;
+  }
+  .mob-featured {
+    align-items: center;
+    flex-direction: column;
+  }
+  .mob-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-comentario {
+    border-radius: 6px;
+    width: 100%;
+  }
+  .mob-footer {
+    position: inherit !important;
+    font-size: 20px !important;
+  }
+  .mob-width {
+    width: auto !important;
+  }
+  .mob-struture {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .mob-footerLinks {
+    display: flex;
+    justify-content: center;
+  }
+  .mob-block {
+    display: block;
+  }
+  .mob-banner {
+    object-fit: cover;
+    height: 450px;
+  }
+}
+
+@media all and (min-width: 1000px) and (max-width: 2000px) {
+  .linksRedes {
+    display: flex;
+  }
+}
+
+/*--------------------------------------------------------------
+      # Whatsapp
+      --------------------------------------------------------------*/
+
+.whatsapp {
+  position: fixed;
+  z-index: 99;
+  right: 10px;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+}
+.whatsapp-img {
+  margin-top: -5px;
+  margin-left: 1px;
+  color: #fff;
+}
+
+.whatsapp a {
+  background: #00e676;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0 rgba(35, 50, 56, 0.1);
+  /* -webkit-transform-origin: center;
+                transform-origin: center; */
+  position: relative;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+  color: #fff;
+  z-index: 1;
+  display: block;
+}
+
+.whatsapp .ripple,
+.whatsapp .ripple:before,
+.whatsapp .ripple:after {
+  -webkit-animation: ripple 3s infinite;
+  animation: ripple 3s infinite;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 231, 126, 0.3);
+  top: 0;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+}
+
+.whatsapp .ripple:before {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.whatsapp .ripple:after {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+@-webkit-keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 50px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 50px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+/* .ec-pro-size, .ec-pro-color{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
