@@ -94,7 +94,7 @@ export default function UserHistory() {
                                     </tr>)
                                   } else if(index < 1) {
                                     return (
-                                      <div className="text-center">
+                                      <div key={item2._id} className="text-center">
                                         Você não fez nenhum pedido ainda
                                       </div>
                                     )
