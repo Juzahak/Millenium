@@ -20,7 +20,7 @@ export default function AddSubCategory({ subCategory, category }) {
       position: "top-right",
       });
     mutate(`/api/subcategory/getAllSubCategory`);
-    if (data.data) router.push("/b2b/subCategory");
+    router.push("/b2b/subCategory");
   };
 
   return (

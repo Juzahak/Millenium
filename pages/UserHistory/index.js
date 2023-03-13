@@ -92,7 +92,7 @@ export default function UserHistory() {
                                       </td>
 
                                     </tr>)
-                                  } else if(index < 1) {
+                                  } else if(index < 1 && pedidos?.length === 0) {
                                     return (
                                       <div key={item2._id} className="text-center">
                                         Você não fez nenhum pedido ainda

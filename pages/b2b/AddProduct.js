@@ -198,7 +198,7 @@ export default function AddProduct() {
           featured: featured,
           active: active,
         });
-        if (data.data) router.push("/b2b/ProductsList");
+        router.push("/b2b/ProductsList");
       }
       }, 5000)
   })

@@ -30,7 +30,7 @@ export default function EditSize({ productSizesEditId, productSizes, setShowEdit
       position: "top-right",
       });
     mutate(`/api/product_sizes/getAllSizes`);
-    if (data.data) router.push("/b2b/productSizes");
+    router.push("/b2b/productSizes");
   };
 
   return (

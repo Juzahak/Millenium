@@ -219,7 +219,7 @@ export default function EditProduct() {
             featured: featured,
             active: active,
           });
-          if (data.data) router.push("/b2b/ProductsList");
+          router.push("/b2b/ProductsList");
         }, 5000)
       } else {
         contador++
@@ -249,7 +249,7 @@ export default function EditProduct() {
               featured: featured,
               active: active,
             });
-            if (data.data) router.push("/b2b/ProductsList");
+            router.push("/b2b/ProductsList");
           }
         }
       }

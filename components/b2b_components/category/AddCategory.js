@@ -18,7 +18,7 @@ function AddCategory() {
       position: "top-right",
       });
     mutate(`/api/category/getAllCategory`);
-    if (data.data) router.push("/b2b/category");
+    router.push("/b2b/category");
   };
 
   

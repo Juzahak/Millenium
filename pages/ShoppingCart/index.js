@@ -78,7 +78,7 @@ export default function ShoppingCart() {
     let product = cartProd.filter(function (obj) {
 
       
-      return obj.sizeId != id;
+      return obj.fakeId != id;
       
     });
     
@@ -204,7 +204,7 @@ export default function ShoppingCart() {
                                     className="ec-cart-pro-remove"
                                     style={{ textAlign: "center" }}
                                   >
-                                    <a onClick={() => removeProducts(item.sizeId)}>
+                                    <a onClick={() => removeProducts(item.fakeId)}>
                                       <BsTrash />
                                     </a>
                                   </td>

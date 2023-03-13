@@ -48,7 +48,7 @@ export default function EditUsers({ usersEditId, users }) {
       position: "top-right",
       });
     mutate(`/api/users`);
-    if (data.data) router.push("/b2b/access");
+    router.push("/b2b/access");
   };
 
 

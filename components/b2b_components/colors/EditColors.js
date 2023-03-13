@@ -32,7 +32,7 @@ export default function EditColors({ colorId, colors, setShowEditCategoryCompone
       position: "top-right",
       });
     mutate(`/api/colors/getAllColor`);
-    if (data.data) router.push("/b2b/color");
+    router.push("/b2b/color");
   };
 
   return (

@@ -64,7 +64,7 @@ function Header() {
 
     let product = cartProd.filter(function (obj) {
 
-      return obj.sizeId != id;
+      return obj.fakeId != id;
 
     });
 
@@ -422,7 +422,7 @@ function Header() {
                       <span>{sizes?.map(main => { if (item.sizeId === main._id) return (<> {`${main.name}`} </>) })}</span>
                       <span style={{display: 'block', backgroundColor: `${item.colorHex}`, width: '20px', height: '20px', border: '1px solid #dedede', borderRadius : '50%'}}></span>
                       
-                      <a href="#" onClick={() => removeProducts(item.sizeId)} className="remove">×</a>
+                      <a href="#" onClick={() => removeProducts(item.fakeId)} className="remove">×</a>
                     </div>
                   </li>
                 )

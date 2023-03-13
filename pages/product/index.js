@@ -134,6 +134,7 @@ export default function Home() {
                 })
             } else if (item._id === id && quantityInput <= parseInt(quantity)) {
                 var entry = {
+                    fakeId: Date.now(),
                     id: item._id,
                     titulo: item.name,
                     embalagem: sizeName,
@@ -154,7 +155,7 @@ export default function Home() {
                 product.push(entry);
                 localStorage.setItem("produtos", JSON.stringify(product));
                 return (
-                    router.push(`/product?id=${id}`),
+                    router.push(`/AllProducts?id=Todos+os+Produtos`),
                     toast('Produto adicionado com sucesso!', {
                         position: "top-right",
                     }))

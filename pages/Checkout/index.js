@@ -11,7 +11,6 @@ import { toast } from "react-toastify";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 import { useCookies } from 'react-cookie';
-import { isSetAccessorDeclaration } from "typescript";
 
 export default function Checkout() {
   const { array } = useContext(CheckoutArr);
@@ -88,12 +87,16 @@ export default function Checkout() {
     setEstado(item.state)
   }
 
-  console.log(array)
 
   const onSubmit = async (e) => {
     e.preventDefault();
     let now = new Date
     let priceId = 0;
+
+    setTimeout(() => {
+      localStorage.clear();
+      router.push("/UserHistory");
+    }, 3000)
 
     let addres = {
       endereco: endereco,
@@ -134,7 +137,7 @@ export default function Checkout() {
     toast('Pedido enviado com sucesso! acompanhe seus pedidos em seu perfil de usúario.', {
       position: "top-right",
     });
-
+  
     let data = await axios.post(`/api/orderHistory/insertOrderHistory`, {
       id_user: id_,
       date: `${now.getDate()}/` + `${now.getMonth()}/` + `${now.getFullYear()}`,
@@ -142,12 +145,9 @@ export default function Checkout() {
       address: JSON.stringify(addres),
       status: "Pendente",
     });
-    mutate(`/api/orderHistory/getAllOrderHistory`);
+    
+    
 
-
-    localStorage.clear();
-
-    if (data.data) router.push("/UserHistory");
   };
 
 

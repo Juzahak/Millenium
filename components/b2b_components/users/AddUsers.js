@@ -31,7 +31,7 @@ export default function AddUsers() {
       position: "top-right",
       });
     mutate(`/api/users`);
-    if (data.data) router.push("/b2b/access");
+    router.push("/b2b/access");
   };
 
   return (

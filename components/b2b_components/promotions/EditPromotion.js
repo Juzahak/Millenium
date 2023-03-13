@@ -125,7 +125,7 @@ export default function EditPromotion({ promotionEditId, promotionsArr, setShowE
               active: promotionsIsActive,
             });
             mutate(`/api/promotions/getAllPromotions`);
-            if (data.data) router.push("/b2b/promotions");
+            router.push("/b2b/promotions");
           }
         }, 5000)
       })
@@ -144,7 +144,7 @@ export default function EditPromotion({ promotionEditId, promotionsArr, setShowE
           active: promotionsIsActive,
         });
         mutate(`/api/promotions/getAllPromotions`);
-        if (data.data) router.push("/b2b/promotions");
+        router.push("/b2b/promotions");
       }, 5000)
     }
   };

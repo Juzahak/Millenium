@@ -125,7 +125,7 @@ export default function EditBanner({ bannerEditId, banners, setShowEditCategoryC
               active: bannerActive,
             });
             mutate(`/api/banners/getAllBanners`);
-            if (data.data) router.push("/b2b/banners");
+            router.push("/b2b/banners");
           }
         }, 5000)
       })
@@ -144,7 +144,7 @@ export default function EditBanner({ bannerEditId, banners, setShowEditCategoryC
           active: bannerActive,
         });
         mutate(`/api/banners/getAllBanners`);
-        if (data.data) router.push("/b2b/banners");
+        router.push("/b2b/banners");
       }, 5000)
     }
   };

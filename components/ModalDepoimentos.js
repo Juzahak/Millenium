@@ -31,7 +31,7 @@ export default function ModalDepoimentos() {
           active: 0,
         });
         mutate(`/api/reviewList`);
-        if (data.data) router.push("/");
+        router.push("/");
       };
     
 

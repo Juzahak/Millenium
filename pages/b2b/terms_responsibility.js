@@ -36,7 +36,7 @@ export default function AddProduct() {
 
         });
 
-        if (data.data) router.push("/b2b/terms_responsibility");
+        router.push("/b2b/terms_responsibility");
 
     };
 

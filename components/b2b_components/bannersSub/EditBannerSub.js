@@ -126,7 +126,7 @@ export default function EditBanner({ bannerSubEditId, bannersSub, setShowEditCat
               active: bannerActive,
             });
             mutate(`/api/subBanners/getAllSubBanner`);
-            if (data.data) router.push("/b2b/subBanners");
+            router.push("/b2b/subBanners");
           }
         }, 5000)
       })
@@ -145,7 +145,7 @@ export default function EditBanner({ bannerSubEditId, bannersSub, setShowEditCat
           active: bannerActive,
         });
         mutate(`/api/subBanners/getAllSubBanner`);
-        if (data.data) router.push("/b2b/subBanners");
+        router.push("/b2b/subBanners");
       }, 5000)
     }
   };

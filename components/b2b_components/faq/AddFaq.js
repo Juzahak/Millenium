@@ -18,7 +18,7 @@ function AddFaq() {
       position: "top-right",
       });
     mutate(`/api/faq/getAllFaq`);
-    if (data.data) router.push("/b2b/faq");
+    router.push("/b2b/faq");
   };
 
   return (

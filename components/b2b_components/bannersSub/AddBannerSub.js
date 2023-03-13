@@ -78,7 +78,7 @@ export default function AddBanner() {
         active: bannersIsActive,
        });
        mutate(`/api/subBanners/getAllSubBanner`);
-       if (data.data) router.push("/b2b/subBanners");
+       router.push("/b2b/subBanners");
      }
      }, 5000)
  })

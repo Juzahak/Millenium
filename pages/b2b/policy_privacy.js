@@ -36,7 +36,7 @@ export default function AddProduct() {
 
         });
 
-        if (data.data) router.push("/b2b/policy_privacy");
+        router.push("/b2b/policy_privacy");
 
     };
 
